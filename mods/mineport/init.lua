@@ -1,6 +1,6 @@
 mineport = {
     path = mtworks.get_current_modpath(),
-    water_range = 6,
+    water_range = 7,
     water_viscosity = 0,
     water_drowning = 1,
 }

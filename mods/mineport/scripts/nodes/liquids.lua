@@ -28,14 +28,25 @@ minetest.register_node("mineport:water", {
     liquid_alternative_source = "mineport:water",
     liquid_viscosity = mineport.water_viscosity,
     liquid_renewable = true,
+    liquid_range = mineport.water_range,
     drowning = mineport.water_drowning,
 })
 
 minetest.register_node("mineport:flowing_water", {
-    drawtype = "liquid",
+    drawtype = "flowingliquid",
     use_texture_alpha = "blend",
     waving = 3,
-    tiles = {
+    special_tiles = {
+        {
+            name = "mineport_water_still.png",
+            backface_culling = false,
+            animation = {
+                type = "vertical_frames",
+                aspect_w = 16,
+                aspect_h = 16,
+                length = 3,
+            }
+        },
         {
             name = "mineport_water_still.png",
             backface_culling = false,
@@ -61,5 +72,6 @@ minetest.register_node("mineport:flowing_water", {
     liquid_alternative_source = "mineport:water",
     liquid_viscosity = mineport.water_viscosity,
     liquid_renewable = true,
+    liquid_range = mineport.water_range,
     drowning = mineport.water_drowning,
 })
