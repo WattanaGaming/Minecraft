@@ -7,11 +7,15 @@ mineport = {
 function mineport.defaultGroupcaps(overrides)
     local groupcaps = {
         oddly_breakable_by_hand = {times={[1]=3.50,[2]=2.00,[3]=0.70}, uses=0}, -- Kept for testing
-        grass = {times = {0.9}},
-        crumbly = {times = {0.75}},
-        wood = {times = {3}},
-        leaf = {times = {0.3}},
-        plant = {times = {0}},
+        stone = {times = {
+            7.5,
+            1.15,
+            0.6,
+            0.4,
+            0.3,
+            0.25,
+            0.2
+        }},
     }
     if overrides then
         return mtworks.override_table(groupcaps, overrides)
