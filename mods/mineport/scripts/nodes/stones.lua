@@ -4,4 +4,3 @@ minetest.register_node("mineport:stone", {
         stone=1,
     },
 })
-minetest.register_alias("mapgen_stone", "mineport:stone")
