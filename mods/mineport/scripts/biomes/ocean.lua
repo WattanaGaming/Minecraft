@@ -2,7 +2,7 @@ minetest.register_biome({
     name = "ocean",
 
     node_top = "mineport:sand",
-    depth_top = 1,
+    depth_top = 2,
 
     node_filler = "mineport:dirt",
     depth_filler = 3,
