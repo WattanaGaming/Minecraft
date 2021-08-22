@@ -1,10 +1,12 @@
+local water_tile = "mineport_water_still.png"
+
 minetest.register_node("mineport:water", {
     drawtype = "liquid",
     use_texture_alpha = "blend",
     waving = 3,
     tiles = {
         {
-            name = "mineport_water_still.png",
+            name = water_tile,
             backface_culling = false,
             animation = {
                 type = "vertical_frames",
@@ -38,7 +40,7 @@ minetest.register_node("mineport:flowing_water", {
     waving = 3,
     special_tiles = {
         {
-            name = "mineport_water_still.png",
+            name = water_tile,
             backface_culling = false,
             animation = {
                 type = "vertical_frames",
@@ -48,7 +50,7 @@ minetest.register_node("mineport:flowing_water", {
             }
         },
         {
-            name = "mineport_water_still.png",
+            name = water_tile,
             backface_culling = false,
             animation = {
                 type = "vertical_frames",

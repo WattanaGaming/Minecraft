@@ -16,6 +16,7 @@ function mineport.defaultGroupcaps(overrides)
         grass = {times = {0.9,0.45,0.25,0.15,0.15,0.1,0.1}},
         dirt = {times = {0.75,0.4,0.2,0.15,0.1,0.1,0.1}},
         stone = {times = {7.5,1.15,0.6,0.4,0.3,0.25,0.2}},
+        sand = {times = {0.75,0.4,0.2,0.15,0.1,0.1,0.1}},
     }
     if overrides then
         return mtworks.override_table(groupcaps, overrides)

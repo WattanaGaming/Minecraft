@@ -7,7 +7,7 @@ minetest.register_biome({
     node_filler = "mineport:dirt",
     depth_filler = 3,
 
-    y_min = 3,
+    y_min = 1,
 
-    heat_point = 30
+    heat_point = 25
 })
