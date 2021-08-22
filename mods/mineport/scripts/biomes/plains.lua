@@ -9,5 +9,6 @@ minetest.register_biome({
 
     y_min = 1,
 
-    heat_point = 25
+    heat_point = 25,
+    humidity_point = 0.7,
 })
