@@ -1,6 +1,6 @@
 local water_tile = "mineport_water_still.png"
 
-minetest.register_node("mineport:water", {
+minetest.register_node(":mineport:water", {
     drawtype = "liquid",
     use_texture_alpha = "blend",
     waving = 3,
@@ -34,7 +34,7 @@ minetest.register_node("mineport:water", {
     drowning = mineport.water_drowning,
 })
 
-minetest.register_node("mineport:flowing_water", {
+minetest.register_node(":mineport:flowing_water", {
     drawtype = "flowingliquid",
     use_texture_alpha = "blend",
     waving = 3,

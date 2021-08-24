@@ -1,4 +1,4 @@
-minetest.register_node("mineport:grass_block", {
+minetest.register_node(":mineport:grass_block", {
     tiles = {
         "mineport_grass_block_top.png",
         "mineport_dirt.png",
@@ -9,7 +9,7 @@ minetest.register_node("mineport:grass_block", {
     },
 })
 
-minetest.register_node("mineport:dirt", {
+minetest.register_node(":mineport:dirt", {
     tiles = {"mineport_dirt.png"},
     groups = {
         dirt=1,
