@@ -1,5 +1,5 @@
 mineport = {
-    path = mtworks.get_current_modpath(),
+    path = utils.get_current_modpath(),
     water_range = 7,
     water_viscosity = 0,
     water_drowning = 1,
@@ -19,14 +19,14 @@ function mineport.defaultGroupcaps(overrides)
         sand = {times = {0.75,0.4,0.2,0.15,0.1,0.1,0.1}},
     }
     if overrides then
-        return mtworks.override_table(groupcaps, overrides)
+        return utils.override_table(groupcaps, overrides)
     else
         return groupcaps
     end
 end
 
 minetest.log("action", "Running scripts")
-mtworks.dir_tree(mineport.path.."/scripts", function(path)
+utils.dir_tree(mineport.path.."/scripts", function(path)
     if path:match("^.+(%..+)$") == ".lua" then
         minetest.log("action", "> "..path)
         dofile(path)
